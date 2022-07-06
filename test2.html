@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* margin: 0; */
+            height: 100vh;
+            background: rgba(0, 255, 221, 0.17) url('./a1.png') no-repeat right top;
+            /* background-image: url('./a1.png');
+            background-repeat:no-repeat;
+            background-position: right bottom; */
+        }
+        .test3 {
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .test1 {
+            width: 200px;
+            color:rgba(216, 17, 117, 0.818);
+            border: 2px solid blue;
+            border-left: 10px solid yellow;
+            border-radius: 10px;
+            /* background-color: rgba(135, 222, 199, 0.418); */
+            /* background-image: url('./bg.webp'); */
+        }
+        .test2 {    
+          text-shadow: 2px 2px rgb(0, 255, 102);
+          text-align-last: center;
+          border: 2px solid red;
+        }
+        .card {
+             
+             flex-basis: 25%;
+        }
+
+        .card__cover {
+             height: 50px;
+             width: 100%;
+             background-image: url('./bg.webp');
+        }
+
+        .card__content {
+            /* Take available height */
+            flex: 1;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="test2">長榮大學</h1>
+    <div class="test3">
+        <div class="card">
+        <!-- Cover -->
+            <div class="card__cover">
+                <h1>標題一</h1>
+            </div>
+    
+            <div class="card__content">
+            <p class="test1">AAAALorem ipsum dolor sit amet consectetur adipisicing elit. In deleniti a, consectetur, delectus quidem iste laudantium esse velit magnam iure, minima quaerat amet sequi nam dolorem perferendis maxime eum? Reprehenderit?
+
+            </p>
+            </div>
+        </div>
+        <div class="card">
+        <!-- Cover -->
+            <div class="card__cover">
+                <h1>標題一</h1>
+            </div>
+    
+            <div class="card__content">
+            <p class="test1">BBBBLorem ipsum dolor sit amet consectetur adipisicing elit. In deleniti a, consectetur, delectus quidem iste laudantium esse velit magnam iure, minima quaerat amet sequi nam dolorem perferendis maxime eum? Reprehenderit?
+
+            </p>
+            </div>
+        </div>
+        <div class="card">
+        <!-- Cover -->
+            <div class="card__cover">
+                <h1>標題一</h1>
+            </div>
+    
+            <div class="card__content">
+            <p class="test1">CCCCLorem ipsum dolor sit amet consectetur adipisicing elit. In deleniti a, consectetur, delectus quidem iste laudantium esse velit magnam iure, minima quaerat amet sequi nam dolorem perferendis maxime eum? Reprehenderit?
+
+            </p>
+            </div>
+        </div>
+        <div class="card">
+        <!-- Cover -->
+            <div class="card__cover">
+                <h1>標題一</h1>
+            </div>
+    
+            <div class="card__content">
+            <p class="test1">DDDDLorem ipsum dolor sit amet consectetur adipisicing elit. In deleniti a, consectetur, delectus quidem iste laudantium esse velit magnam iure, minima quaerat amet sequi nam dolorem perferendis maxime eum? Reprehenderit?
+
+            </p>
+            </div>
+        </div>
+            
+    </div>    
+</body>
+</html>
