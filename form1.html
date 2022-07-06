@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, tr, td {
+            border: 1px solid red;
+            border-collapse: collapse;
+        }
+        .a {
+            color:chocolate;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <label for="game_name">遊戲名稱</label>
+                </td>
+                <td>
+                    <input type="text" name="game_name" id="">
+                </td>
+            </tr>
+           <tr>
+                <td>
+                    類型
+                </td>
+                <td>
+        <input type="radio" name="a" id="RPG" value="PRG">
+        <label class="a" for="RPG">RPG</label>
+        <input type="radio" name="a" id="act" value="act">
+        <label class="a" for="act">動作</label>
+        <input type="radio" name="a" id="sport" value="sport">
+        <label class="a" for="act">運動</label>    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    支援平台
+                </td>
+                <td>
+                    <input type="checkbox" name="b" id="win" value="win">
+                    <label for="win">Windows</label>
+                    <input type="checkbox" name="b" id="switch" value="switch">
+                    <label for="switch">Switch</label>
+                    <input type="checkbox" name="b" id="mac" value="mac">
+                    <label for="mac">mac</label>
+                </td>
+            </tr>           
+            <tr>
+                <td>
+                    上市日期
+                </td>
+                <td>
+                    <input type="date" name="releasedate" id="releasedate">
+                </td>
+            </tr>
+        </table>
+        <label for="cars">Choose a car:</label>
+<select id="cars" name="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+  <option value="audi">Telsa</option>
+</select>
+<textarea name="message" rows="10" cols="20">
+The cat was playing in the garden.
+</textarea>
+        <input type="submit" value="確認">
+        <input type="button" value="取消">
+    </form>
+</body>
+</html>
